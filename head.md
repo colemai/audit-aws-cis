@@ -1,3 +1,3 @@
-audit RDS
+audit AWS CIS
 ============================
-This stack will monitor RDS and alert on things CloudCoreo developers think are violations of best practices
+This stack will monitor AWS CIS and alert on violations against the CIS policy
