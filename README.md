@@ -52,13 +52,9 @@ This repo is designed to work with CloudCoreo. It will monitor AWS against the C
   * description: Which alerts would you like to check for? Default is all IAM alerts. Choices are iam-unusediamgroup,iam-multiple-keys,iam-inactive-key-no-rotation,iam-active-key-no-rotation,iam-passwordreuseprevention,iam-missing-password-policy,iam-expirepasswords,iam-no-mfa,iam-root-no-mfa,iam-root-active-key,iam-root-active-password,iam-user-attached-policies,iam-password-policy-uppercase,iam-password-policy-lowercase,iam-password-policy-symbol,iam-password-policy-number,iam-password-policy-min-length,iam-root-access-key-1,iam-root-access-key-2,iam-inventory-users,iam-inventory-roles,iam-inventory-groups,iam-inventory-policies
   * default: iam-unusediamgroup, iam-multiple-keys, iam-inactive-key-no-rotation, iam-active-key-no-rotation, iam-passwordreuseprevention, iam-missing-password-policy, iam-expirepasswords, iam-no-mfa, iam-root-no-mfa, iam-root-active-key, iam-root-active-password, iam-user-attached-policies, iam-password-policy-uppercase, iam-password-policy-lowercase, iam-password-policy-symbol, iam-password-policy-number, iam-password-policy-min-length, iam-root-access-key-1, iam-root-access-key-2
 
-### `AUDIT_AWS_CIS_ELB_ALERT_LIST`:
-  * description: Which alerts would you like to check for? Default is all ELB alerts. Choices are elb-old-ssl-policy,elb-current-ssl-policy,elb-inventory
-  * default: elb-old-ssl-policy
-
 ### `AUDIT_AWS_CIS_EC2_ALERT_LIST`:
   * description: Which alerts would you like to check for? Default is all EC2 alerts. Choices are ec2-inventory-instances,ec2-inventory-security-groups,ec2-ip-address-whitelisted,ec2-unrestricted-traffic,ec2-TCP-1521-0.0.0.0/0,ec2-TCP-3306-0.0.0.0/0,ec2-TCP-5432-0.0.0.0/0,ec2-TCP-27017-0.0.0.0/0,ec2-TCP-1433-0.0.0.0/0,ec2-TCP-3389-0.0.0.0/0,ec2-TCP-22-0.0.0.0/0,ec2-TCP-5439-0.0.0.0/0,ec2-TCP-23,ec2-TCP-21,ec2-TCP-20,ec2-ports-range,ec2-not-used-security-groups
-  * default: ec2-ip-address-whitelisted, ec2-unrestricted-traffic, ec2-TCP-1521-0.0.0.0/0, ec2-TCP-3306-0.0.0.0/0, ec2-TCP-5432-0.0.0.0/0, ec2-TCP-27017-0.0.0.0/0, ec2-TCP-1433-0.0.0.0/0, ec2-TCP-3389-0.0.0.0/0, ec2-TCP-22-0.0.0.0/0, ec2-TCP-5439-0.0.0.0/0, ec2-TCP-23, ec2-TCP-21, ec2-TCP-20, ec2-ports-range, ec2-not-used-security-groups
+  * default: ec2-TCP-3389-0.0.0.0/0, ec2-TCP-22-0.0.0.0/0
 
 ### `AUDIT_AWS_CIS_S3_ALERT_LIST`:
   * description: Which alerts would you like to check for? Default is all S3 alerts. Choices are s3-allusers-write,s3-allusers-write-acp,s3-allusers-read,s3-authenticatedusers-write,s3-authenticatedusers-write-acp,s3-authenticatedusers-read,s3-logging-disabled,s3-world-open-policy-delete,s3-world-open-policy-get,s3-world-open-policy-list,s3-world-open-policy-put,s3-world-open-policy-all,s3-only-ip-based-policy
@@ -81,6 +77,9 @@ This repo is designed to work with CloudCoreo. It will monitor AWS against the C
 
 ### `AUDIT_AWS_CIS_ALERT_RECIPIENT`:
   * description: Enter the email address(es) that will receive notifications. If more than one, separate each with a comma.
+
+### `AUDIT_AWS_CIS_ELB_ALERT_LIST`:
+  * description: Which alerts would you like to check for? Default is all ELB alerts. Choices are elb-old-ssl-policy,elb-current-ssl-policy,elb-inventory
 
 ## Tags
 1. Audit
