@@ -44,10 +44,6 @@ This repo is designed to work with CloudCoreo. It will monitor AWS against the C
   * description: Which alerts would you like to check for? Default is all Redshift alerts. Choices are redshift-publicly-accessible,redshift-encrypted,redshift-no-version-upgrade,redshift-no-require-ssl,redshift-no-s3-logging,redshift-no-user-logging,redshift-snapshot-retention,redshift-inventory
   * default: redshift-publicly-accessible, redshift-encrypted, redshift-no-version-upgrade, redshift-no-require-ssl, redshift-no-s3-logging, redshift-no-user-logging, redshift-snapshot-retention
 
-### `AUDIT_AWS_CIS_RDS_ALERT_LIST`:
-  * description: Which alerts would you like to check for? Default is all RDS alerts. Choices are rds-short-backup-retention-period,rds-no-auto-minor-version-upgrade,rds-db-publicly-accessible,rds-inventory
-  * default: rds-short-backup-retention-period, rds-no-auto-minor-version-upgrade, rds-db-publicly-accessible
-
 ### `AUDIT_AWS_IAM_ALERT_LIST`:
   * description: Which alerts would you like to check for? Default is all IAM alerts. Choices are iam-inventory-users,iam-inventory-roles,iam-inventory-policies,iam-inventory-groups,iam-unusediamgroup,iam-multiple-keys,iam-inactive-key-no-rotation,iam-active-key-no-rotation,iam-missing-password-policy,iam-passwordreuseprevention,iam-expirepasswords,iam-no-mfa,iam-root-no-mfa,iam-root-active-password,iam-user-attached-policies,iam-password-policy-uppercase,iam-password-policy-lowercase,iam-password-policy-symbol,iam-password-policy-number,iam-password-policy-min-length,iam-root-access-key-1,iam-root-access-key-2,iam-support-role,iam-user-password-not-used
   * default: iam-passwordreuseprevention, iam-expirepasswords, iam-user-attached-policies, iam-password-policy-uppercase, iam-password-policy-lowercase, iam-password-policy-symbol, iam-password-policy-number, iam-password-policy-min-length, iam-support-role
@@ -77,6 +73,9 @@ This repo is designed to work with CloudCoreo. It will monitor AWS against the C
 
 ### `AUDIT_AWS_CIS_ALERT_RECIPIENT`:
   * description: Enter the email address(es) that will receive notifications. If more than one, separate each with a comma.
+
+### `AUDIT_AWS_CIS_RDS_ALERT_LIST`:
+  * description: Which alerts would you like to check for? Default is all RDS alerts. Choices are rds-short-backup-retention-period,rds-no-auto-minor-version-upgrade,rds-db-publicly-accessible,rds-inventory
 
 ### `AUDIT_AWS_CIS_ELB_ALERT_LIST`:
   * description: Which alerts would you like to check for? Default is all ELB alerts. Choices are elb-old-ssl-policy,elb-current-ssl-policy,elb-inventory
