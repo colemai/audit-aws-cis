@@ -145,7 +145,6 @@ variables:
     required: false
     type: array
     default:
-      - cloudwatch-inventory
   AUDIT_AWS_CIS_KMS_ALERT_LIST:
     overrides:
       - AUDIT_AWS_KMS_ALERT_LIST
@@ -153,7 +152,6 @@ variables:
     required: false
     type: array
     default:
-      - kms-inventory
   AUDIT_AWS_CIS_SNS_ALERT_LIST:
     overrides:
       - AUDIT_AWS_SNS_ALERT_LIST
@@ -161,7 +159,6 @@ variables:
     required: false
     type: array
     default:
-      - sns-inventory
   AUDIT_AWS_CIS_REGIONS:
     overrides:
       - AUDIT_AWS_CLOUDTRAIL_REGIONS
