@@ -72,6 +72,7 @@ variables:
       - cloudtrail-service-disabled
       - cloudtrail-log-file-validating
       - cloudtrail-logs-cloudwatch
+      - cloudtrail-logs-encrypted
   AUDIT_AWS_CIS_REDSHIFT_ALERT_LIST:
     overrides:
       - AUDIT_AWS_REDSHIFT_ALERT_LIST
@@ -102,6 +103,23 @@ variables:
       - iam-password-policy-number
       - iam-password-policy-min-length
       - iam-support-role
+      - iam-root-active-password
+      - iam-no-mfa
+      - iam-unused-access
+      - iam-active-key-no-rotation
+      - iam-root-access_key
+      - iam-root-no-mfa-cis
+      - iam-no-hardware-mfa-root
+      - iam-initialization-access-key
+      - manual-ensure-security-questions
+      - manual-detailed-billing
+      - manual-strategic-iam-roles
+      - manual-contact-details
+      - manual-security-contact
+      - manual-resource-instance-access
+      - manual-full-privilege-user
+      - manual-appropriate-sns-subscribers
+      - manual-least-access-routing-tables
   AUDIT_AWS_CIS_ELB_ALERT_LIST:
     overrides:
       - AUDIT_AWS_ELB_ALERT_LIST
@@ -118,6 +136,8 @@ variables:
     default:
       - ec2-TCP-3389-0.0.0.0/0
       - ec2-TCP-22-0.0.0.0/0
+      - ec2-vpc-flow-logs
+      - ec2-default-security-group-traffic
   AUDIT_AWS_CIS_S3_ALERT_LIST:
     overrides:
       - AUDIT_AWS_S3_ALERT_LIST
@@ -139,6 +159,7 @@ variables:
     required: false
     type: array
     default:
+      - kms-key-rotates
   AUDIT_AWS_CIS_SNS_ALERT_LIST:
     overrides:
       - AUDIT_AWS_SNS_ALERT_LIST
